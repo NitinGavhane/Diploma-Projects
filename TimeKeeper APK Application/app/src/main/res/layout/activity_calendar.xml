@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/gapLarge"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    tools:context=".CalendarActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <CalendarView
+            android:id="@+id/calendarCVCA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:layout_marginBottom="@dimen/gapDefault"
+            android:elevation="@dimen/gapSmall"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily List"
+                android:textSize="@dimen/textNormal"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:onClick="addEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/dailyLVCA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/gapDefault"
+        android:elevation="@dimen/gapSmall"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_calendar"
+            android:background="#fff"
+            android:layout_margin="@dimen/gapDefault"
+            android:id="@+id/calendarNav"
+            android:onClick="navigate"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_timer_off"
+            android:background="#fff"
+            android:layout_margin="@dimen/gapDefault"
+            android:id="@+id/timerNav"
+            android:onClick="navigate"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_stopwatch_off"
+            android:background="#fff"
+            android:layout_margin="@dimen/gapDefault"
+            android:id="@+id/stopwatchNav"
+            android:onClick="navigate"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile_off"
+            android:background="#fff"
+            android:layout_margin="@dimen/gapDefault"
+            android:id="@+id/profileNav"
+            android:onClick="navigate"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tips_off"
+            android:background="#fff"
+            android:layout_margin="@dimen/gapDefault"
+            android:id="@+id/tipsNav"
+            android:onClick="navigate"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

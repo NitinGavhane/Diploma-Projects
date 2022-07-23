@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "132218377617",
+    "firebase_url": "https://timekeeper-host.firebaseio.com",
+    "project_id": "timekeeper-host",
+    "storage_bucket": "timekeeper-host.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132218377617:android:b4028a72ffdf394775f630",
+        "android_client_info": {
+          "package_name": "host.timekeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132218377617-bh0auknp5q5o82j8bqo6tgqe4n2sqt7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzi2zXOBjOOJidVSnHFmi49Qquda8bSqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132218377617-bh0auknp5q5o82j8bqo6tgqe4n2sqt7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

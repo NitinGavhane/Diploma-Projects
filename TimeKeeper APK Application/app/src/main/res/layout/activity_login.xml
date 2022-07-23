@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    tools:context=".LoginActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:padding="@dimen/gapXL"
+            tools:context=".Login">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gapXL"
+                android:background="@drawable/card_bg"
+                android:elevation="@dimen/gapSmall"
+                android:orientation="vertical"
+                android:padding="@dimen/gapLarge">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gapXL"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/textHeading" />
+
+                <EditText
+                    android:id="@+id/emailETAL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gapDefault"
+                    android:background="@drawable/field_bg"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/gapDefault" />
+
+                <EditText
+                    android:id="@+id/passETAL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gapDefault"
+                    android:background="@drawable/field_bg"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/gapDefault" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gapDefault"
+                    android:layout_marginBottom="@dimen/gapDefault"
+                    android:background="@drawable/btn_bg"
+                    android:padding="@dimen/gapDefault"
+                    android:text="Login"
+                    android:textColor="@color/colorWhite"
+                    android:onClick="attemptLogin"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/gapDefault"
+                    android:textSize="@dimen/textSmall"
+                    android:textAlignment="center"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/colorGray"
+                    android:onClick="pwdReset"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gapXL"
+                android:padding="@dimen/gapDefault"
+                android:textSize="@dimen/textSmall"
+                android:textAlignment="center"
+                android:text="Register here"
+                android:textColor="@color/colorGray"
+                android:onClick="registerPage"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:id="@+id/progressLLAL"
+        android:background="#66cccccc">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="@dimen/gapDefault"
+            />
+
+    </LinearLayout>
+ </RelativeLayout>

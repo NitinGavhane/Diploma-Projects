@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/gapLarge"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    tools:context=".TipsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/gapLarge"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/gapXL"
+            android:paddingBottom="55dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="@dimen/gapLarge"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:onClick="timeMGMT"
+                android:padding="@dimen/gapLarge">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Time Management Tips"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textHeading"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="start|end"
+                    android:lineHeight="22dp"
+                    android:lines="6"
+                    android:text="Time management is the process of planning and exercising conscious control of time spent on specific activities, especially to increase effectiveness, efficiency, and productivity. It involves a juggling act of various demands upon a person relating to work, social life, ..." />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="@dimen/gapLarge"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:onClick="eisenHower"
+                android:padding="@dimen/gapLarge">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gapDefault"
+                    android:text="Eisenhower Matrix"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textHeading"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="start|end"
+                    android:lineHeight="22dp"
+                    android:lines="6"
+                    android:text="The Eisenhower Matrix, also referred to as Urgent-Important Matrix, helps you decide on and prioritize tasks by urgency and importance, sorting out less urgent and important tasks which you should either delegate or not do at all." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:onClick="eatThatFrog"
+                android:layout_marginBottom="@dimen/gapXL"
+                android:padding="@dimen/gapLarge">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gapDefault"
+                    android:text="Eat The Frogs"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textHeading"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="start|end"
+                    android:lineHeight="22dp"
+                    android:lines="9"
+                    android:text="\“If it’s your job to eat a frog, it’s best to do it First Thing in the Morning. And if it’s your job to eat two frogs, it’s best to eat the BIGGEST one first.\” — Mark Twain
+A technique based on Brian Tracy’s famoustime-management book, Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time." />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/gapDefault"
+        android:elevation="@dimen/gapSmall"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_calendar_off"
+            android:background="#fff"
+            android:layout_margin="@dimen/gapDefault"
+            android:id="@+id/calendarNav"
+            android:onClick="navigate"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_timer_off"
+            android:background="#fff"
+            android:layout_margin="@dimen/gapDefault"
+            android:id="@+id/timerNav"
+            android:onClick="navigate"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_stopwatch_off"
+            android:background="#fff"
+            android:layout_margin="@dimen/gapDefault"
+            android:id="@+id/stopwatchNav"
+            android:onClick="navigate"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile_off"
+            android:background="#fff"
+            android:layout_margin="@dimen/gapDefault"
+            android:id="@+id/profileNav"
+            android:onClick="navigate"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tips"
+            android:background="#fff"
+            android:layout_margin="@dimen/gapDefault"
+            android:id="@+id/tipsNav"
+            android:onClick="navigate"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

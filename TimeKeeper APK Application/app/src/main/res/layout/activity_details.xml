@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLightGray"
+    android:padding="@dimen/gapDefault"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/gapDefault"
+        android:layout_marginBottom="@dimen/gapDefault"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/gapDefault"
+        android:paddingBottom="@dimen/gapDefault"
+        >
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_back"
+            android:onClick="backToCal"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/gapDefault"
+            android:paddingRight="@dimen/gapDefault"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="60dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/dateTVAD"
+                android:textColor="#000"
+                android:text="Date"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="60dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/textNormal"
+                android:id="@+id/dayTVAD"
+                android:text="Day of Week"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineHeight="60dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textNormal"
+            android:id="@+id/daysLeftTVAD"
+            android:text="Time left to"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Events"
+        android:padding="@dimen/gapDefault"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_margin="@dimen/gapDefault"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:id="@+id/userEventsLVAD"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:padding="@dimen/gapDefault"
+        android:onClick="addUserEvent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_btn"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Public Events"
+        android:padding="@dimen/gapDefault"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_margin="@dimen/gapDefault"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:id="@+id/subEventsLVAD"
+        />
+
+
+</LinearLayout>

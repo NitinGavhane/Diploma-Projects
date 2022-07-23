@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/field_bg"
+            android:hint="Event Name"
+            android:id="@+id/eventNameEA"
+            android:layout_margin="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/field_bg"
+            android:hint="Event Description"
+            android:id="@+id/eventDescEA"
+            android:layout_margin="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/field_bg"
+            android:hint="Event Venue"
+            android:id="@+id/eventVenueEA"
+            android:layout_margin="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/field_bg"
+            android:hint="Venue Lattitude (Optional)"
+            android:id="@+id/eventLatEA"
+            android:inputType="numberDecimal"
+            android:layout_margin="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/field_bg"
+            android:hint="Venue Longitude (Optional)"
+            android:id="@+id/eventLongEA"
+            android:inputType="numberDecimal"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Time"
+            android:id="@+id/eventTimeEA"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="10dp"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Public"
+            android:id="@+id/eventPublicEA"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Event"
+            android:id="@+id/setEventBTN"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+Installation steps of the Project :-
+
+1.Install the  Android Studio 3.5 version.
+2.Copy the T5 folder in C:\Users\DELL\AndroidStudioProjects path.
+3.Open Android studio from start menu.
+4.Start Android Studio and close any open Android Studio Projects.
+5.From the android Studio  menu click File > New >Import Projects.
+6.Select the Destination folder and Click Next.
+7.Select the import options and click Finish.
+8.Wait until the project sync is completed.
+
+Follow the steps to run the projects :-
+
+1.Open your project in android studio.
+2.Plug-in your Android Device to computer via USB.
+3.Open the "settings" App on the Device.
+4.Scroll down to bottom to find "About Phone" item.
+5.Scroll down to bottom to  find "Build number" selection.
+6.Tap on "Build number" 7 times in quick succession.
+7.You should see the message "You are now a developer!".
+8.Go back to main "Settings" Page.
+9.Scroll down to bottom to  find "Developer options" item.
+10.Turn on "USB Debugging"switch and hit "OK".
+11.Unplug and re-plug the device.
+12.Dialog appears "Allow USB Debugging?"
+13.Check "Always allow from this computer "and then hit "OK".
+14.Now,click "Run"from the toolbar.
+15.In the "Choose device"window that appears,select the "Choose a running device" radio button,select the device ,and click OK.
+
+Once Gradle finishes building,Android Studio should install the app on your connected device and start it.
+
+
+
+
+
+
